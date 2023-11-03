@@ -242,6 +242,7 @@ class _counterScreenState extends State<counterScreen> {
                     behavior: HitTestBehavior.opaque,
                     onTap: () {
                       controller.audioPlayer.pause();
+                      controller.isStarted.value = false;
                       _controller.restart();
                       _controller.pause();
                     },
